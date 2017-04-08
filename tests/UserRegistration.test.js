@@ -17,7 +17,7 @@ describe("Test UserRegistration component", () => {
     });
 
     it('should render a modal when the user clicks the link', () => {
-        wrapper.find('h3').simulate('click');
+        wrapper.find('button').simulate('click');
         expect(wrapper.state('isModalVisible')).toBe(true);
         expect(wrapper.containsMatchingElement(<UserRegistrationModal />)).toBe(true)
     });
